@@ -1,0 +1,183 @@
+/* Estilos Gerais para "Quem Somos" */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #171a21;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Seção Principal - Introdução */
+.about-intro {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e55d4f;
+}
+
+/* Missão, Visão, Valores */
+.mission-vision-values {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.mission-vision-values .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: slideIn 1.5s ease-out;
+}
+
+.mission-vision-values h2 {
+    font-size: 2rem;
+    color: #171a21;
+    margin-bottom: 10px;
+}
+
+.mission-vision-values p, .mission-vision-values ul {
+    font-size: 1rem;
+    color: #333;
+}
+
+.mission-vision-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-vision-values ul li {
+    margin-bottom: 10px;
+}
+
+/* Seção de Equipe */
+.team-section {
+    background-color: #171a21;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.team-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #171a21;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .socials a:hover {
+    color: #ff6f61;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

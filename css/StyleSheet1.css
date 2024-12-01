@@ -1,0 +1,160 @@
+/* Fonte principal */
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1b2838;
+  color: #c7d5e0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #171a21;
+}
+
+header .logo {
+  height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #c7d5e0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #4a90e2;
+}
+
+/* Introdução */
+.intro {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(45deg, #4a90e2, #171a21);
+}
+
+.intro h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.subscription {
+  margin-top: 1.5rem;
+}
+
+.subscription input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.subscription button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscription button:hover {
+  background-color: #357abd;
+}
+
+/* Galeria */
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item p {
+  margin-top: 0.5rem;
+  color: #4a90e2;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #171a21;
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  margin: 0 0.5rem;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+/* Formulário de Contato */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #4a90e2;
+  border-radius: 4px;
+  background-color: #171a21;
+  color: #c7d5e0;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.5rem;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #357abd;
+}
